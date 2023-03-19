@@ -29,7 +29,7 @@ public class PlayerMove implements Listener {
 
     private final ItemStack oneTime;
     private final ArrayList<Item> groundItems = new ArrayList<>();
-    private final ArrayList<UUID> dropFor = new ArrayList<>();
+    public final ArrayList<UUID> dropFor = new ArrayList<>();
     private final HashMap<UUID, ArmorStand> armorStand = new HashMap<>();
     private final HashMap<UUID, Vector> pastPoint = new HashMap<>();
     private final HashMap<UUID, Vector> wind = new HashMap<>();

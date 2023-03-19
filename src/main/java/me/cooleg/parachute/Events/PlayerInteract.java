@@ -48,7 +48,7 @@ public class PlayerInteract implements Listener {
                 .getItemMeta()
                 .getPersistentDataContainer()
                 .get(key, PersistentDataType.STRING)
-                .equals("onetime")) {e.getItem().setAmount(e.getItem().getAmount()-1);}
+                .equals("onetime")) {e.getItem().setAmount(e.getItem().getAmount()-1); move.dropFor.add(e.getPlayer().getUniqueId());}
 
         move.startParachute(e.getPlayer());
     }
