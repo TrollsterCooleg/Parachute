@@ -1,0 +1,9 @@
+name: Parachute
+version: '${project.version}'
+main: me.cooleg.parachute.Parachute
+api-version: 1.16
+commands:
+  getparachute:
+    permission: parachute.get
+  getonetimeparachute:
+    permission: parachute.onetime

@@ -1,0 +1,30 @@
+## Max wind speed per direction in blocks per second.
+## Wind will range between this and 0.
+wind-speed: 1
+
+## How much to multiply the default speed of moving with parachute by.
+## Multiplies all speeds, this includes wind!
+## Setting this above 1.25 is very much not recommended.
+speed-multiplier: 1.1
+
+## Change material of items for models/textures
+onetime-material: PAPER
+regular-material: PAPER
+parachute-material: PAPER
+
+## Custom Model Data Number Editing
+## Default numbers are just random ones.
+onetime-item: 612409
+parachute-item: 412091
+parachute-model: 230953
+
+## Set parachute names and descriptions. Use & for formatting codes.
+regular-name: "Parachute"
+regular-description: "Right click to deploy"
+onetime-name: "One Time Parachute"
+onetime-description: "Right click to deploy"
+
+## Drop onetime parachute (not able to pick up) for cosmetic purposes
+drop-enabled: false
+## How many seconds it should despawn in.
+drop-time: 200
