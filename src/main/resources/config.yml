@@ -28,3 +28,8 @@ onetime-description: "Right click to deploy"
 drop-enabled: false
 ## How many seconds it should despawn in.
 drop-time: 200
+
+## Parachutes stacking (will still stack if multiple given in one command)
+parachutes-stack: true
+## One-time parachutes stacking (will still stack if multiple given in one command)
+onetime-stack: true

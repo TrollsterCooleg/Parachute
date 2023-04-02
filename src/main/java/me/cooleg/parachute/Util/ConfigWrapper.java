@@ -7,6 +7,8 @@ import org.bukkit.configuration.file.FileConfiguration;
 
 public class ConfigWrapper {
     private final boolean drop;
+    private final boolean stack;
+    private final boolean onetimeStack;
     private final int despawnTime;
     private final double speed;
     private final double wind;
@@ -23,6 +25,9 @@ public class ConfigWrapper {
 
     public ConfigWrapper(FileConfiguration config) {
         drop = config.getBoolean("drop-enabled");
+        stack = config.getBoolean("parachutes-stack");
+        onetimeStack = config.getBoolean("onetime-stack");
+
         despawnTime = config.getInt("drop-time");
 
         speed = config.getDouble("speed-multiplier");
@@ -61,57 +66,22 @@ public class ConfigWrapper {
     public boolean isDrop() {
         return drop;
     }
-
     public int getDespawnTime() {
         return despawnTime;
     }
-
-    public double getSpeed() {
-        return speed;
-    }
-
-    public double getWind() {
-        return wind;
-    }
-
-    public int getModelData() {
-        return modelData;
-    }
-
-    public int getItemData() {
-        return itemData;
-    }
-
-    public int getOnetimeData() {
-        return onetimeData;
-    }
-
-    public Material getOnetimeMat() {
-        return onetimeMat;
-    }
-
-    public Material getParachuteMat() {
-        return parachuteMat;
-    }
-
-    public Material getModelMat() {
-        return modelMat;
-    }
-
-    public String getRegularName() {
-        return regularName;
-    }
-
-    public String getRegularDescription() {
-        return regularDescription;
-    }
-
-    public String getOnetimeName() {
-        return onetimeName;
-    }
-
-    public String getOnetimeDescription() {
-        return onetimeDescription;
-    }
+    public double getSpeed() {return speed;}
+    public double getWind() {return wind;}
+    public int getModelData() {return modelData;}
+    public int getItemData() {return itemData;}
+    public int getOnetimeData() {return onetimeData;}
+    public Material getOnetimeMat() {return onetimeMat;}
+    public Material getParachuteMat() {return parachuteMat;}
+    public Material getModelMat() {return modelMat;}
+    public String getRegularName() {return regularName;}
+    public String getRegularDescription() {return regularDescription;}
+    public String getOnetimeName() {return onetimeName;}
+    public String getOnetimeDescription() {return onetimeDescription;}
+    public boolean isStack() {return stack;}
+    public boolean isOnetimeStack() {return onetimeStack;}
 
 }
